@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>每周访谈简报 · AI / 前沿科学 / 财经金融 / 地缘</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <h1>每周访谈简报</h1>
+      <p class="subtitle">中美知名对话访谈 / 播客一周精华 · AI 发展 · 前沿科学 · 财经金融 · 宏观 · 地缘</p>
+      <div class="week-bar">
+        <label for="weekSelect">周期</label>
+        <select id="weekSelect"></select>
+        <button id="refreshBtn" class="hdr-btn" title="重新加载最新数据">⟳ 刷新</button>
+        <button id="playAllBtn" class="hdr-btn hdr-play play-btn" data-owner="all" data-label="▶ 播放本周要点" title="语音播放本周主线、交叉对比与各期要点">▶ 播放本周要点</button>
+        <span id="genTime" class="gen-time"></span>
+      </div>
+    </div>
+  </header>
+
+  <nav class="filter-bar">
+    <div class="wrap" id="filterTabs"></div>
+  </nav>
+
+  <main class="wrap">
+    <section id="headline" class="headline"></section>
+    <div id="content"></div>
+    <footer class="site-footer">
+      <p>内容整理自各节目官方 shownotes / 公开报道，观点与金句均标注出处；本页每周自动更新。</p>
+    </footer>
+  </main>
+
+  <script src="assets/avatars.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
